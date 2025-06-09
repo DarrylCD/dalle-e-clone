@@ -1,14 +1,12 @@
 import mongoose from 'mongoose';
 
-const connectDB = (uri) => {
+const connectDB = (url) => {
   mongoose.set('strictQuery', true);
   mongoose.connect(url)
-    .then(() => {
-      console.log('MongoDB connected successfully');
-    })
+    .then(() => console.log('connected to mongo'))
     .catch((err) => {
-      console.error('MongoDB connection error:', err);
-      process.exit(1); // Exit the process with failure
+      console.error('failed to connect with mongo');
+      console.error(err);
     });
 };
 

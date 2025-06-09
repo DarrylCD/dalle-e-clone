@@ -17,13 +17,30 @@ const CreatePost = () => {
   // This state is used to show the loader while the image is being generated
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // prevent the default reload form submission behavior
     if (form.prompt && form.photo) {
       setLoading(true);
-      // Logic to handle post submission goes here
-      // After submission, navigate back to home page
-      navigate('/');
+      try {
+        const response = await fetch('http://localhost:8080/api/v1/post', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(form), // send the form data to the server
+        });
+        if (response.ok) {  // check if the response is ok
+          alert('Post created successfully!');
+        }
+        await response.json(); // wait for the response to be resolved
+        navigate('/'); // after submission, navigate back to home page
+      } catch (error) {
+        alert('Failed to create post. Please try again.');
+        console.error('Error:', error);
+      } finally {
+        setLoading(false); // reset loading state
+      }
+
     } else {
       alert('Please enter a prompt and generate an image before submitting.');
     }
@@ -39,6 +56,27 @@ const CreatePost = () => {
   }
 
   const generateImage = async () => {
+    if (form.prompt) {
+      try {
+        setGeneratingImg(true);
+        const response = await fetch('http://localhost:8080/api/v1/dalle', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ prompt: form.prompt }),
+        });
+
+        const data = await response.json();
+        setForm({ ...form, photo: `data:image/jpeg;base64,${data.photo}` }); // set the generated image in the form state
+      } catch (error) {
+        alert(error);
+      } finally {
+        setGeneratingImg(false);
+      }
+    } else {
+      alert('Please enter a prompt before generating an image.');
+    }
   }
 
   return (
@@ -94,8 +132,8 @@ const CreatePost = () => {
         <div className="mt-5 flex gap-5">
           <button
             type="button"
-            onClick={() => { generateImage }}
-            className="text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            onClick={generateImage}
+            className="text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center cursor-pointer hover:bg-[#6469ff]/90 transition-all ease-in-out duration-150"
           >
             {generatingImg ? 'Generating...' : 'Generate'}
           </button>
@@ -106,7 +144,7 @@ const CreatePost = () => {
           </p>
           <button
             type="submit"
-            className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+            className="mt-3 text-white bg-[#6469ff] font-medium rounded-md text-sm w-full sm:w-auto px-5 py-2.5 text-center cursor-pointer hover:bg-[#6469ff]/90 transition-all ease-in-out duration-150"
           >
             {loading ? 'Sharing...' : 'Share with the community'}
           </button>
