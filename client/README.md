@@ -1,12 +1,116 @@
-# React + Vite
+# 🎨 DALL·E Clone – AI Image Generator & Sharing Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a full-stack **DALL·E clone** built with the **MERN stack** and **Vite + React**, allowing users to:
 
-Currently, two official plugins are available:
+- 🧠 Enter a prompt
+- 🤖 Generate AI images using **OpenAI's DALL·E**
+- 📤 Share the result
+- 🖼️ View all shared images on the home page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It's a visually polished and functional showcase of modern full-stack AI-integrated web development.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- Prompt-based image generation using **OpenAI**
+- Image upload and sharing via **Cloudinary**
+- Dark/light mode support (with `next-themes`)
+- Display generated images in a gallery grid
+- Responsive design built with Tailwind CSS
+- Powered by a robust **Express + MongoDB** backend
+
+---
+
+## 🛠️ Tech Stack
+
+### 🔹 Client
+
+- [Vite + React](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/) (for dark mode config via `next-themes`)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Node.js](https://nodejs.org/)
+
+### 🔹 Server
+
+- [Express.js](https://expressjs.com/)
+- [MongoDB](https://www.mongodb.com/)
+- [Cloudinary](https://cloudinary.com/) (image hosting)
+- [OpenAI API](https://openai.com/)
+
+---
+
+## 📸 Preview
+
+| Prompt Input | Generated Output | Shared Gallery |
+|:--:|:--:|:--:|
+| ![Prompt](https://via.placeholder.com/300x180?text=Prompt+Input) | ![Output](https://via.placeholder.com/300x180?text=Generated+Image) | ![Gallery](https://via.placeholder.com/300x180?text=Image+Feed) |
+
+_(Replace with real screenshots or hosted links)_
+
+---
+
+## 📦 Environment Variables
+
+To run this project locally, create a `.env` file in your root directory and add the following:
+
+```env
+MONGODB_URL=your_mongodb_connection_string
+DALLEAI_API_KEY=your_openai_key
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+
+---
+
+## 🧑‍💻 Getting Started
+
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/your-username/dall-e-clone.git
+cd dall-e-clone
+2. Install Dependencies
+For the client:
+
+bash
+Copy
+Edit
+cd client
+npm install
+For the server:
+
+bash
+Copy
+Edit
+cd ../server
+npm install
+3. Run the App
+In two separate terminals:
+
+bash
+Copy
+Edit
+# Terminal 1 - Client
+cd client
+npm run dev
+bash
+Copy
+Edit
+# Terminal 2 - Server
+cd server
+npm run start
+The app should now be running on http://localhost:5173.
+
+📄 License
+This project is licensed under the MIT License.
+
+🧠 Credits & Acknowledgments
+Inspired by OpenAI’s DALL·E
+
+Image hosting by Cloudinary
+
+Built with ❤️ using modern MERN stack practices
+
+“Where imagination becomes visuals, one prompt at a time.”
