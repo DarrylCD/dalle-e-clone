@@ -37,6 +37,7 @@ It's a visually polished and functional showcase of modern full-stack AI-integra
 - [MongoDB](https://www.mongodb.com/)
 - [Cloudinary](https://cloudinary.com/) (image hosting)
 - [OpenAI API](https://openai.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 
 ---
 
