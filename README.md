@@ -61,47 +61,41 @@ DALLEAI_API_KEY=your_openai_key
 CLOUDINARY_CLOUD_NAME=your_cloud_name
 CLOUDINARY_API_KEY=your_api_key
 CLOUDINARY_API_SECRET=your_api_secret
+```
 
 ---
 
 ## 🧑‍💻 Getting Started
 
 1. Clone the Repository
-bash
-Copy
-Edit
+```
 git clone https://github.com/your-username/dall-e-clone.git
 cd dall-e-clone
+```
 2. Install Dependencies
 For the client:
-
-bash
-Copy
-Edit
+```
 cd client
 npm install
+```
 For the server:
-
-bash
-Copy
-Edit
+```
 cd ../server
 npm install
+```
 3. Run the App
 In two separate terminals:
 
-bash
-Copy
-Edit
 # Terminal 1 - Client
+```
 cd client
 npm run dev
-bash
-Copy
-Edit
+```
 # Terminal 2 - Server
+```
 cd server
 npm run start
+```
 The app should now be running on http://localhost:5173.
 
 🧠 Credits & Acknowledgments
