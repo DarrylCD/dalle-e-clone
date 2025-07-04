@@ -26,7 +26,7 @@ const ThemeSwitch: React.FC<DarkSwitchProps> = () => {
                         exit={{ rotate: 90, scale: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: 'easeOut' }}
                     >
-                        <Moon className="w-6 h-6 text-yellow-300" />
+                        <Moon className="w-6 h-6 text-[#6469ff]" />
                     </motion.div>
                 ) : (
                     <motion.div
@@ -36,7 +36,7 @@ const ThemeSwitch: React.FC<DarkSwitchProps> = () => {
                         exit={{ rotate: 90, scale: 0, opacity: 0 }}
                         transition={{ duration: 0.3, ease: 'easeOut' }}
                     >
-                        <Sun className="w-6 h-6 text-yellow-500" />
+                        <Sun className="w-6 h-6 text-[#6469ff]" />
                     </motion.div>
                 )}
             </AnimatePresence>
