@@ -45,9 +45,7 @@ It's a visually polished and functional showcase of modern full-stack AI-integra
 
 | Home Page | Prompt Input | Generated Output |
 |:--:|:--:|:--:|
-| ![Prompt](https://via.placeholder.com/300x180?text=Prompt+Input) | ![Output](https://via.placeholder.com/300x180?text=Generated+Image) | ![Gallery](https://via.placeholder.com/300x180?text=Image+Feed) |
-
-_(Replace with real screenshots or hosted links)_
+| ![Home](https://cdn.imgchest.com/files/7bwckdxzpd7.png) | ![Prompt](https://cdn.imgchest.com/files/4nec8mkpq54.png) | ![Output](https://cdn.imgchest.com/files/49zc2bwq3oy.png) |
 
 ---
 
