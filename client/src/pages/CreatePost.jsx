@@ -82,10 +82,10 @@ const CreatePost = () => {
   return (
     <section className="max-w-7xl mx-auto">
       <div>
-        <h1 className="font-extrabold text-[#222328] text-[32px]">
+        <h1 className="font-extrabold text-[#222328] text-[38px] dark:text-white">
           Create
         </h1>
-        <p className="mt-2 text-[#666e75] text-[16px] max-w-[500px]">
+        <p className="mt-2 text-[#666e75] text-[14px] max-w-[765px] dark:text-gray-400">
           Create imaginative and visually stunning images using DALL-E AI and share them with the community.
         </p>
       </div>
@@ -139,7 +139,7 @@ const CreatePost = () => {
           </button>
         </div>
         <div className="mt-10">
-          <p className="mt-2 text-[#666e75] text-[14px]">
+          <p className="mt-2 text-[#666e75] text-[14px] dark:text-grey-300">
             Once you have created the image, you can share it with the community.
           </p>
           <button
@@ -152,7 +152,7 @@ const CreatePost = () => {
       </form>
 
     </section>
-  )
-}
+  );
+};
 
-export default CreatePost
+export default CreatePost;

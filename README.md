@@ -43,7 +43,7 @@ It's a visually polished and functional showcase of modern full-stack AI-integra
 
 ## 📸 Preview
 
-| Prompt Input | Generated Output | Shared Gallery |
+| Home Page | Prompt Input | Generated Output |
 |:--:|:--:|:--:|
 | ![Prompt](https://via.placeholder.com/300x180?text=Prompt+Input) | ![Output](https://via.placeholder.com/300x180?text=Generated+Image) | ![Gallery](https://via.placeholder.com/300x180?text=Image+Feed) |
 

@@ -18,7 +18,7 @@ const Card = ({_id, name, prompt, photo}) => {
         <button
           type="button"
           onClick={() => downloadImage(_id, photo)}
-          className="bg-transparent border-none outline-none hover:opacity-75 transition-opacity duration-200 hover:bg-[#6469ff] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer absolute top-4 right-4"
+          className="bg-transparent border-none outline-none hover:opacity-75 transition-opacity duration-200 hover:bg-[#6469ff] rounded-full w-10 h-10 flex justify-center items-center cursor-pointer absolute bottom-4 right-4"
           title="Download image"
         >
           <img src={download} alt="download" className="w-6 h-6 object-contain invert" />
