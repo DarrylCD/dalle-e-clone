@@ -13,7 +13,7 @@ const App = () => (
   <BrowserRouter >
     <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4] dark:bg-[#090B17]">
       <Link to="/" className='flex '>
-        <img src={dalle} alt="logo" className="h-10 object-contain dark:bg-white" />
+        <img src={dalle} alt="logo" className="h-20 object-contain dark:bg-white" />
       </Link>
       <div className='flex space-x-2'>
         <DarkSwitch />
