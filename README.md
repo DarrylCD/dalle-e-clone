@@ -69,7 +69,7 @@ CLOUDINARY_API_SECRET=your_api_secret
 
 1. Clone the Repository
 ```
-git clone https://github.com/your-username/dall-e-clone.git
+git clone https://github.com/DarrylCD/dall-e-clone.git
 cd dall-e-clone
 ```
 2. Install Dependencies
