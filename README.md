@@ -1,9 +1,9 @@
-# 🎨 DALL·E Clone – AI Image Generator & Sharing Platform
+# 🎨 DALL-E Clone – AI Image Generator & Sharing Platform
 
-This is a full-stack **DALL·E clone** built with the **MERN stack** and **Vite + React**, allowing users to:
+This is a full-stack **DALL-E clone** built with the **MERN stack** and **Vite + React**, allowing users to:
 
 - 🧠 Enter a prompt
-- 🤖 Generate AI images using **OpenAI's DALL·E**
+- 🤖 Generate AI images using **OpenAI's DALL-E**
 - 📤 Share the result
 - 🖼️ View all shared images on the home page
 
@@ -104,11 +104,8 @@ cd server
 npm run start
 The app should now be running on http://localhost:5173.
 
-📄 License
-This project is licensed under the MIT License.
-
 🧠 Credits & Acknowledgments
-Inspired by OpenAI’s DALL·E
+Inspired by OpenAI’s DALL-E and JavaScript Mastery
 
 Image hosting by Cloudinary
 
