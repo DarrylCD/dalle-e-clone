@@ -13,8 +13,10 @@ It's a visually polished and functional showcase of modern full-stack AI-integra
 
 ## 🚀 Live Demo
 
-🌐 **Frontend (Netlify):** [https://dallecloone.netlify.app](https://dallecloone.netlify.app)  
-⚙️ **Backend (Render):** [https://dalle-e-clone-68ih.onrender.com](https://dalle-e-clone-68ih.onrender.com)
+🌐 **Frontend (Netlify):** [dall-e clone](https://dallecloone.netlify.app)  
+⚙️ **Backend :** Hosted on Render  
+- Local development: http://localhost:8080  
+- Production URL is set in the `.env` file as `VITE_SERVER_URL`
 
 ---
 
