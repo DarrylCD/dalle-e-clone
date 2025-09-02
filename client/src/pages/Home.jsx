@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, FormField, Loader } from '../components';
 
+const SERVER_URL = import.meta.env.VITE_SERVER_URL;
 const RenderCards = ({ data, title }) => {
   if (data?.length > 0) {
     return (
