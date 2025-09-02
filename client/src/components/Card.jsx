@@ -1,6 +1,6 @@
-import React from 'react'
-import { download } from '../assets' // import the download icon
-import { downloadImage } from '../utils' // import the downloadImage function
+import React from 'react';
+import { download } from '../assets';
+import { downloadImage } from '../utils';
 
 
 // hovering over the Card component will show the prompt, user name of the post, and the image
